@@ -6,7 +6,7 @@ spring:
 server:
   port: 8201
 spring:
-  profiles: dev
+  profiles: dev  # 本次访问的配置项
   application:
     name: microservicecloud-config-client-dev
 
@@ -20,7 +20,7 @@ eureka:
 server:
   port: 8202
 spring:
-  profiles: test
+  profiles: test # 本次访问的配置项
   application:
     name: microservicecloud-config-client-test
 

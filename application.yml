@@ -4,13 +4,13 @@ spring:
   
 ---
 spring:
-  profiles: dev #开发时环境
+  profiles: dev #开发时环境 , 本次访问的配置项
   application:
     name: microservicecloud-config-dev
 
 
 ---
 spring:
-  profiles: test #测试环境
+  profiles: test #测试环境 , 本次访问的配置项
   application:
     name: microservicecloud-config-test
