@@ -1,0 +1,33 @@
+# Provider ：连接Eureka，并且通过CloudConfigServer获取application.yml配置文件信息
+
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001,http://eureka7002.com:7002,http://eureka7003.com:7003
+  instance:
+    instance-id: microservice-provider-8085-cloudconfigclient
+
+---
+spring:
+  profiles: test
+
+server:
+  port: 8086
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001,http://eureka7002.com:7002,http://eureka7003.com:7003
+  instance:
+    instance-id: microservice-provider-8086-cloudconfigclient

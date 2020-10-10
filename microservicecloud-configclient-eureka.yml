@@ -1,0 +1,29 @@
+# EurekaServer：通过Configser获取到git中对应EurekaServer的配置文件信息
+
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+server:
+  port: 7004
+eureka:
+  instance:
+    instance-id: eureka7004.com:7004
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  
+---
+spring:
+  profiles: dev
+server:
+  port: 7005
+eureka:
+  instance:
+    instance-id: eureka7005.com:7005
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  
