@@ -17,6 +17,26 @@ eureka:
       defaultZone: http://eureka7001.com:7001,http://eureka7002.com:7002,http://eureka7003.com:7003
   instance:
     instance-id: microservice-provider-8085-cloudconfigclient
+mybatis:
+  # mybatis 配置文件路径
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  # mybatis 别名 base-package
+  type-aliases-package: com.yyl.microservice.entity
+  # mybatis mapper映射xml文件路径
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+  
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloudtest_01?useSSL=false&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
 
 ---
 spring:
@@ -31,3 +51,25 @@ eureka:
       defaultZone: http://eureka7001.com:7001,http://eureka7002.com:7002,http://eureka7003.com:7003
   instance:
     instance-id: microservice-provider-8086-cloudconfigclient
+
+
+mybatis:
+  # mybatis 配置文件路径
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  # mybatis 别名 base-package
+  type-aliases-package: com.yyl.microservice.entity
+  # mybatis mapper映射xml文件路径
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+  
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloudtest_01?useSSL=false&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
