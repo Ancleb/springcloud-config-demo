@@ -17,7 +17,7 @@ eureka:
     fetch-registry: false
     service-url:
       #defaultZone: http://eureka7004.com:7004/eureka
-      defaultZone: localhost:7004/eureka
+      defaultZone: localhost:7004/eureka/
 
 ---
 spring:
@@ -32,5 +32,5 @@ eureka:
     fetch-registry: false
     service-url:
       #defaultZone: http://eureka7004.com:7004/eureka
-      defaultZone: localhost:7004/eureka
+      defaultZone: localhost:7004/eureka/
   
