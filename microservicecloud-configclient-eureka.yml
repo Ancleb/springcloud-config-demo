@@ -16,8 +16,8 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-       defaultZone: localhost:7004/eureka
-  
+      defaultZone: localhost:7004/eureka
+
 ---
 spring:
   profiles: test
@@ -30,5 +30,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-       defaultZone: localhost:7004/eureka
+      defaultZone: localhost:7004/eureka
   
