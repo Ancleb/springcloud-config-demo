@@ -11,7 +11,7 @@ server:
   port: 7004
 eureka:
   instance:
-    instance-id: eureka7004.com:7004
+    instance-id: eureka7004.com:7004-dev
   client:
     register-with-eureka: false
     fetch-registry: false
@@ -22,13 +22,13 @@ eureka:
 spring:
   profiles: test
 server:
-  port: 7005
+  port: 7004
 eureka:
   instance:
-    instance-id: eureka7005.com:7005
+    instance-id: eureka7004.com:7004-test
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-       defaultZone: localhost:7005/eureka
+       defaultZone: localhost:7004/eureka
   
